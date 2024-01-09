@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Test</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+    }
+    .red {
+      background-color: red;
+    }
+    .blue {
+      background-color: blue;
+    }
+    .green {
+      background-color: green;
+    }
+  </style>
+  <body>
+    <section>
+      <h2>Positioning</h2>
+      <div>
+        <div class="red box">red</div>
+        <div class="blue box">blue</div>
+        <div class="green box">green</div>
+      </div>
+    </section>
+    <section>
+      <h2>Flex vs grid</h2>
+      <div>
+        <h3>Flex</h3>
+        <div>
+          <div class="red box">red</div>
+          <div class="blue box">blue</div>
+          <div class="green box">green</div>
+          <div class="red box">red</div>
+          <div class="blue box">blue</div>
+        </div>
+      </div>
+      <div>
+        <h3>Grid</h3>
+        <div>
+          <div class="red box">red</div>
+          <div class="blue box">blue</div>
+          <div class="green box">green</div>
+          <div class="red box">red</div>
+          <div class="blue box">blue</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

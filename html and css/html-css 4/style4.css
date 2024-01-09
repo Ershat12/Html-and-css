@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  margin-bottom: 30px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+body {
+  padding: 30px;
+}
+
+div {
+  border: solid 1px #000;
+  padding: 10px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.tr-ol {
+  display: flex;
+  column-gap: 50px;
+}
+
+.tr-ol li {
+  border: solid 1px red;
+}
+
+.tr-container {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background: none;
+  padding: 30px;
+  color: #000;
+  font-size: 30px;
+}
+
+.box {
+  width: 200px;
+  height: 400px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Z-INDEX */
+
+.red {
+  position: relative;
+  background-color: red;
+  z-index: 100;
+}
+
+.blue {
+  margin-left: 30px;
+  position: relative;
+  background-color: blue;
+  margin-top: -300px;
+  margin-bottom: -300px;
+  z-index: 99;
+}
+.blue:hover {
+  z-index: 110;
+}
+
+.green {
+  position: relative;
+  background-color: green;
+  margin-left: 60px;
+  z-index: 10;
+}
+
+#trans-container button {
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/* BUTTON 1*/
+
+#trans-btn-1 {
+  font-weight: 900;
+  color: red;
+  background-color: antiquewhite;
+  transition: 3s;
+}
+
+#trans-btn-1:hover {
+  background-color: red;
+  color: #000;
+}
+
+/* BUTTON 2*/
+
+#trans-btn-2 {
+  color: red;
+  background-color: antiquewhite;
+  transition: background-color 3s;
+}
+
+#trans-btn-2:hover {
+  background-color: red;
+  color: #000;
+}
+
+/************* NEW *************/
+
+#tr-one {
+  transform: scale(160%);
+}
+#tr-two {
+  transform: translate(0px, -100px);
+}
+#tr-three {
+  transform: rotate(45deg);
+}
+#wr-container {
+  width: 100%;
+  writing-mode: vertical-rl;
+}
+#wr-container p {
+  transform: rotate(15deg) ;
+}
+#btn {
+  position: relative;
+}
+#btn::before {
+  content: "->";
+  position: absolute;
+
+}
+
+#shaded_text {
+  position: relative;
+
+}
+#shaded_text::after {
+  
+}
+
+

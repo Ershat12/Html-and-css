@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+  </head>
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      padding: 30px;
+    }
+    h2 {
+      margin: 20px 0;
+    }
+    h3 {
+      margin: 10px 0;
+    }
+
+    div {
+      border: solid 1px #000;
+    }
+
+    .box {
+      height: 300px;
+      width: 300px;
+      font-size: 25px;
+      color: white;
+    }
+    .unsized_box {
+      font-size: 25px;
+      color: white;
+    }
+    .red {
+      background-color: rgba(255, 0, 0, 1);
+    }
+    .blue {
+      background-color: blue;
+    }
+    .green {
+      background-color: green;
+    }
+
+    h2 {
+      border-radius: 100%;
+    }
+  </style>
+
+  <body>
+    <section>
+      <h2>Box Model</h2>
+
+      <div>
+        <div id="red-box" class="red box">red</div>
+        <div id="blue-box" class="blue box">blue</div>
+        <div id="green-box" class="green box" style="border-radius: 100%">green</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Box Model</h2>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          neque nihil <span style="background-color: red">placeat</span> officia
+          quis aperiam suscipit esse repellat quasi illo voluptate, labore
+          assumenda natus ad animi. Accusantium nemo mollitia exercitationem.
+        </p>
+      </div>
+    </section>
+    <section>
+      <h2>Positioning</h2>
+      <div>
+        <div class="red box" style="display: block">red</div>
+        <div class="blue box" style="display: block">blue</div>
+        <div class="green box" style="display: block">green</div>
+      </div>
+    </section>
+    <section>
+      <h2>Flex vs grid</h2>
+      <div>
+        <h3>Flex</h3>
+        <div style="display: flex; flex-direction: row">
+          <div class="red box">red</div>
+          <div class="blue box">blue</div>
+          <div class="green box">green</div>
+        </div>
+      </div>
+      <div>
+        <h3>Grid</h3>
+        <div>
+          <div class="red unsized_box">red</div>
+          <div class="blue unsized_box">blue</div>
+          <div class="green unsized_box">green</div>
+          <div class="red unsized_box">red</div>
+          <div class="blue unsized_box">blue</div>
+          <div class="green unsized_box">green</div>
+          <div class="red unsized_box">red</div>
+          <div class="blue unsized_box">blue</div>
+          <div class="green unsized_box">green</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
